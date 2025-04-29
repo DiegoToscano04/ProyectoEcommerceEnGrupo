@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center"> Proyecto Ingeniería de Software 2 - E-commerce </h1>
 <h2 align="center"> Frontend Angular con Microfrontend y Module Federation para el Microservicio "Carrito"</h2>
 
@@ -15,3 +16,6 @@ Abrir la terminal y ubicarse en el proyecto: ```../Frontend/e-commerce/microfron
 **Nota Importante: No utilizar** ```npm install``` para no sobreescribir el archivo ```package-lock.json```.
 
 ```yarn install``` lee el archivo ```yarn.lock``` para instalar las dependencias de forma rápida y confiable.
+=======
+# ProyectoEcommerceEnGrupo
+>>>>>>> f35a55e072f57e7c587bb0b969cce7e87344e9e6
