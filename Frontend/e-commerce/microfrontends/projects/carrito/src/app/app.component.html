@@ -1,0 +1,28 @@
+<!-- app.component.html -->
+<app-cart-empty *ngIf="cartService.isEmpty()" />
+
+<div class="cart-container" *ngIf="!cartService.isEmpty()">
+  <div class="cart">
+
+    <!-- Columna Izquierda: Lista + Botones -->
+    <div class="cart-left-column">
+      <!-- Cabeceras (las moveremos a cart-list mejor) -->
+      <!-- <div class="cart-list-headers"> ... </div> -->
+
+      <app-cart-list></app-cart-list>
+
+      <!-- Botones de Acción Inferiores -->
+      <div class="cart-actions">
+        <button class="btn btn-continue">Continuar Comprando</button>
+        <!-- <button class="btn btn-update">Actualizar Carro</button>  // Opcional con Signals -->
+        <button class="btn btn-clear" (click)="cartService.clearCart()">Vaciar Carro</button>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Resumen -->
+    <div class="cart-right-column">
+       <app-cart-summary></app-cart-summary>
+    </div>
+
+  </div>
+</div>

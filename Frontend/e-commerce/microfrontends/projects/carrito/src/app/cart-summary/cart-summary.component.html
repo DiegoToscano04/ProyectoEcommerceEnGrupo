@@ -1,0 +1,36 @@
+<!-- src/app/cart-summary/cart-summary.component.html (AJUSTADO) -->
+<div class="summary-container">
+  <div class="summary-header">
+    Total Carrito
+  </div>
+
+  <!-- Fila de Productos -->
+  <div class="product-row">
+      <span class="highlight-text">Productos ({{ cartService.totalItems() }})</span>
+      <!-- Podrías añadir el valor total de items si quisieras aquí -->
+      <!-- <span>{{ cartService.totalItems() }}</span> -->
+  </div>
+
+  <!-- Separador -->
+  <hr class="divider" />
+
+  <!-- Fila de Cupón -->
+  <div class="coupon-section">
+    <span class="coupon-text">Cupón de Descuento</span>
+    <span class="apply-text">Aplicar</span>
+  </div>
+
+  <!-- Separador -->
+  <hr class="divider" />
+
+  <!-- Fila de Total -->
+  <div class="total-section">
+    <span>Total</span>
+    <span>{{ cartService.totalPrice() | currency:'COP':'symbol':'1.0-0' }}</span> <!-- Ajusta formato currency si necesitas -->
+  </div>
+
+  <!-- Contenedor para el Botón (para mejor control de espacio) -->
+  <div class="checkout-button-container">
+      <button class="checkout-button">Proceder al Pago</button>
+  </div>
+</div>
